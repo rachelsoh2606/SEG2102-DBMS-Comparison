@@ -1,0 +1,13 @@
+--transactions_100k
+SELECT category, amount FROM transactions_100k
+ALLOW FILTERING;
+
+
+--transactions_500k
+SELECT category, amount FROM transactions_500k
+ALLOW FILTERING;
+
+
+--transactions_1000k
+SELECT category, amount FROM transactions_1000k
+ALLOW FILTERING;
