@@ -21,27 +21,43 @@ The study measures performance using synthetic transaction datasets of **100k, 5
 Database-Optimization-Study/
 │
 ├── postgresql/
-│ ├── schema.sql # Table and index creation scripts
-│ ├── queries.sql # Query workload (Q1–Q4)
-│ └── results/ # Explain plans & timing outputs
+│      ├── schema.sql
+│      ├── queries.sql
+│      └── results/
+│             ├── explain_Q1.txt
+│             ├── explain_Q2.txt
+│             ├── explain_Q3.txt
+│             └── explain_Q4.txt
 │
 ├── mongodb/
-│ ├── schema_setup.js # Index creation scripts
-│ ├── queries.js # Query workload + aggregation pipelines
-│ └── results/ # executionStats explain outputs
+│      ├── index_setup.js
+│      ├── queries.js
+│      └── results/
+│             ├── explain_Q1.json
+│             ├── explain_Q2.json
+│             ├── explain_Q3.json
+│             └── explain_Q4.json
 │
 ├── cassandra/
-│ ├── schema.cql # Query-driven table designs
-│ ├── queries.cql # Workload queries (partition, clustering, pre-agg)
-│ └── results/ # Query timing outputs
+│      ├── schema.cql
+│      ├── queries.cql
+│      └── results/
+│             ├── timing_Q1.txt
+│             ├── timing_Q2.txt
+│             ├── timing_Q3.txt
+│             └── timing_Q4.txt
 │
 ├── data/
-│ ├── generate_dataset.py # Python script used to generate 100k / 500k / 1M datasets
-│ ├── transactions_100k.csv
-│ ├── transactions_500k.csv
-│ └── transactions_1M.csv
+│      ├── generate_dataset.py
+│      ├── transactions_100k.csv
+│      ├── transactions_500k.csv
+│      └── transactions_1M.csv
 │
 └── report/
+       ├── result_screenshots/
+       ├── code_screenshots/
+       └── discussion_figures/
+
 
 
 ---
