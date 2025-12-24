@@ -1,0 +1,8 @@
+--transactions_100k
+db.transactions_100k.find().sort({ amount: -1 }).limit(10);
+
+-transactions_500K
+db.transactions_500k.find().sort({ amount: -1 }).limit(10);
+
+--transactions_1000K
+db.transactions_1000k.find().sort({ amount: -1 }).limit(10);
