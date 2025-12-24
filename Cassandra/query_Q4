@@ -1,0 +1,19 @@
+--transactions_100k
+SELECT * FROM transactions_100k
+ORDER BY amount DESC
+LIMIT 10
+ALLOW FILTERING;
+
+
+--transactions_500k
+SELECT * FROM transactions_500k
+ORDER BY amount DESC
+LIMIT 10
+ALLOW FILTERING;
+
+
+--transactions_1000k
+SELECT * FROM transactions_1000k
+ORDER BY amount DESC
+LIMIT 10
+ALLOW FILTERING;
