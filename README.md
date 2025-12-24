@@ -19,23 +19,40 @@ The study measures performance using synthetic transaction datasets of **100k, 5
 
 ## Repository Structure
 postgresql/
-  schema.sql
-  queries.sql
+  index.sql
+  query_Q1
+  query_Q2
+  query_Q3
+  query_Q4
+  explain
   results/ → query plans (EXPLAIN ANALYZE) for Q1–Q4
 
 mongodb/
-  index_setup.js
-  queries.js
+  index.js
+  query_Q1
+  query_Q2
+  query_Q3
+  query_Q4
+  explain.js
   results/ → execution stats (.explain("executionStats"))
 
 cassandra/
-  schema.cql
-  queries.cql
+  import.js
+  index_Q1.sql
+  query_Q1
+  query_Q2
+  query_Q3
+  query_Q4
+  explain
+  optimized_approach
+  unoptimized_approach
   results/ → query timing outputs for Q1–Q4
 
 data/
   generate_dataset.py
-  datasets: 100k.csv, 500k.csv, 1M.csv
+  transactions_100k.csv
+  transactions_500k.csv
+  transactions_1000k.csv
 
 report/
   code_screenshots/
