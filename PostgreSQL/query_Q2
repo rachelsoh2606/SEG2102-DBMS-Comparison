@@ -1,0 +1,11 @@
+--transactions_100k
+SELECT * FROM transactions_100k
+WHERE amount BETWEEN 100 AND 500;
+
+--transactions_500k
+SELECT * FROM transactions_500k
+WHERE amount BETWEEN 100 AND 500;
+
+--transactions_1000k
+SELECT * FROM transactions_1000k
+WHERE amount BETWEEN 100 AND 500;
