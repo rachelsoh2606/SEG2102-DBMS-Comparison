@@ -1,0 +1,2 @@
+use system_traces;
+select * from sessions;
