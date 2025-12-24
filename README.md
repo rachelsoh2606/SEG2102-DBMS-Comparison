@@ -18,46 +18,43 @@ The study measures performance using synthetic transaction datasets of **100k, 5
 ---
 
 ## Repository Structure
-Database-Optimization-Study/
-│
-├── postgresql/
-│      ├── schema.sql
-│      ├── queries.sql
-│      └── results/
-│             ├── explain_Q1.txt
-│             ├── explain_Q2.txt
-│             ├── explain_Q3.txt
-│             └── explain_Q4.txt
-│
-├── mongodb/
-│      ├── index_setup.js
-│      ├── queries.js
-│      └── results/
-│             ├── explain_Q1.json
-│             ├── explain_Q2.json
-│             ├── explain_Q3.json
-│             └── explain_Q4.json
-│
-├── cassandra/
-│      ├── schema.cql
-│      ├── queries.cql
-│      └── results/
-│             ├── timing_Q1.txt
-│             ├── timing_Q2.txt
-│             ├── timing_Q3.txt
-│             └── timing_Q4.txt
-│
-├── data/
-│      ├── generate_dataset.py
-│      ├── transactions_100k.csv
-│      ├── transactions_500k.csv
-│      └── transactions_1M.csv
-│
-└── report/
-       ├── result_screenshots/
-       ├── code_screenshots/
-       └── discussion_figures/
+postgresql/
 
+schema.sql
+
+queries.sql
+
+results/ → query plans (EXPLAIN ANALYZE) for Q1–Q4
+
+mongodb/
+
+index_setup.js
+
+queries.js
+
+results/ → execution stats (.explain("executionStats"))
+
+cassandra/
+
+schema.cql
+
+queries.cql
+
+results/ → query timing outputs for Q1–Q4
+
+data/
+
+generate_dataset.py
+
+datasets: 100k.csv, 500k.csv, 1M.csv
+
+report/
+
+code_screenshots/
+
+result_screenshots/
+
+discussion_figures/
 
 
 ---
