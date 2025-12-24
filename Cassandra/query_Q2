@@ -1,0 +1,16 @@
+--transactions_100k
+SELECT * FROM transactions_100k
+WHERE amount >= 100 AND amount <= 500
+ALLOW FILTERING;
+
+
+--transactions_500k
+SELECT * FROM transactions_500k
+WHERE amount >= 100 AND amount <= 500
+ALLOW FILTERING;
+
+
+--transactions_1000k
+SELECT * FROM transactions_1000k
+WHERE amount >= 100 AND amount <= 500
+ALLOW FILTERING;
