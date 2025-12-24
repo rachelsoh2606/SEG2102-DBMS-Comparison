@@ -1,0 +1,7 @@
+CREATE TABLE queryopt.transactions_optimized_sort_1000k (
+    dummy_bucket TEXT,
+    amount DECIMAL,
+    transaction_id INT,
+    -- other columns --
+    PRIMARY KEY (dummy_bucket, amount, transaction_id)
+) WITH CLUSTERING ORDER BY (amount DESC, transaction_id ASC);
