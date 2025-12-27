@@ -31,7 +31,7 @@ Action: Run the scripts in create_index.sql.
 Verification: Repeat the tracing steps above to compare the "Duration" field in system_traces.sessions.
 
 2. Global Sorting via Dummy Bucketing
-For global sorting (e.g., Top 10 transactions by amount), we use the Dummy Bucket technique. This forces related data into a single partition for efficient clustering order retrieval.
+For global sorting (e.g., Top 10 transactions by amount), we use the Dummy Bucket technique. This forces related data into a single partition for efficient clustering order retrieval (refer to unoptimized_approach.sql and optimized_approach.sql)
 
 Data Migration Pipeline
 Since the raw dataset lacks a bucket column, we use an awk pipeline to inject the dummy_bucket value ('all') during the data transfer:
