@@ -1,8 +1,0 @@
---transactions_100K
-db.transactions_100k.find({ region: "Asia" });
-
---transactions_500K
-db.transactions_500k.find({ region: "Asia" });
-
---transactions_1000K
-db.transactions_1000k.find({ region: "Asia" });

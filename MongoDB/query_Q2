@@ -1,8 +1,0 @@
---transactions_100k
-db.transactions_100k.find({ amount: { $gte: 100, $lte: 500 } });
-
---transactions_500k
-db.transactions_500k.find({ amount: { $gte: 100, $lte: 500 } });
-
---transactions_1000K
-db.transactions_1000k.find({ amount: { $gte: 100, $lte: 500 } });
