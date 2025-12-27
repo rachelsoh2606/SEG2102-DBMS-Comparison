@@ -31,7 +31,7 @@ Action: Run the scripts in create_index.sql.
 Verification: Repeat the tracing steps above to compare the "Duration" field in system_traces.sessions.
 
 2. Global Sorting via Dummy Bucketing
-For global sorting (e.g., Top 10 transactions by amount), we use the Dummy Bucket technique. This forces related data into a single partition for efficient clustering order retrieval (refer to unoptimized_approach.sql and optimized_approach.sql)
+For global sorting (e.g., Top 10 transactions by amount), we use the Dummy Bucket technique. This forces related data into a single partition for efficient clustering order retrieval (refer to optimization_approach.sql)
 
 Data Migration Pipeline
 Since the raw dataset lacks a bucket column, we use an awk pipeline to inject the dummy_bucket value ('all') during the data transfer:
@@ -42,4 +42,4 @@ docker exec -it cassandra cqlsh -e "COPY queryopt.transactions_unoptimized_sort_
 | docker exec -it cassandra cqlsh -e "COPY queryopt.transactions_optimized_sort_1000k (dummy_bucket, transaction_id, user_id, transaction_date, amount, category, region) FROM STDIN"
 
 Results and Evidence
-All result screenshots, execution plan logs, and performance comparison tables are stored in the /Assignment_Result.doc directory.
+All result screenshots, execution plan logs, and performance comparison tables are stored in the /Assignment_Result.docx file.

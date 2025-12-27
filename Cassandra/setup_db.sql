@@ -12,6 +12,7 @@ CREATE TABLE transactions (
     PRIMARY KEY (transaction_id)
 );
 
+-- import data
 COPY transactions (transaction_id, user_id, transaction_date, amount, category, region)
 FROM '/home/transactions_100k.csv'
 WITH HEADER = TRUE;

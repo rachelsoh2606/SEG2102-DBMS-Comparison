@@ -1,9 +1,0 @@
-CREATE TABLE queryopt.transactions_unoptimized_sort_1000k (
-    transaction_id INT,
-    amount DECIMAL,
-    user_id INT,
-    transaction_date DATE,
-    category TEXT,
-    region TEXT,
-    PRIMARY KEY (transaction_id, amount)
-) WITH CLUSTERING ORDER BY (amount DESC);
