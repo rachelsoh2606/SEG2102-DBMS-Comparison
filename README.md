@@ -15,50 +15,6 @@ The study measures performance using synthetic transaction datasets of **100k, 5
 
 📌 *The goal is not to compare which database is best, but to compare how optimization techniques improve query performance within each model.*
 
----
-
-## Repository Structure
-postgresql/
-  index.sql
-  query_Q1
-  query_Q2
-  query_Q3
-  query_Q4
-  explain
-  results/ → query plans (EXPLAIN ANALYZE) for Q1–Q4
-
-mongodb/
-  index.js
-  query_Q1
-  query_Q2
-  query_Q3
-  query_Q4
-  explain.js
-  results/ → execution stats (.explain("executionStats"))
-
-cassandra/
-  import.js
-  index_Q1.sql
-  query_Q1
-  query_Q2
-  query_Q3
-  query_Q4
-  explain
-  optimized_approach
-  unoptimized_approach
-  results/ → query timing outputs for Q1–Q4
-
-data/
-  generate_dataset.py
-  transactions_100k.csv
-  transactions_500k.csv
-  transactions_1000k.csv
-
-report/
-  code_screenshots/
-  result_screenshots/
-  discussion_figures/
-
 
 ---
 
